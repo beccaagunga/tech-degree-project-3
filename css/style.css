@@ -6,110 +6,170 @@
  }
 
   body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman' serif;
+    font-family: 'Rokkitt', serif;
   }
 
   .top-bar {
-    margin-top: 0;
-    margin-bottom: 40px;
-    padding-top: 10px;
-    background-color: rgb(47, 57, 68);
+    background: rgb(47, 57, 68);
+    height: 100%;
+    margin-top: -21px;
+    text-align: center;
+    padding-top: 1rem;
     color: white;
-    font-size: 1.2rem;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
   }
 
-  .signup h1 {
-    color: rgb(47, 57, 68);
-    text-align: center;
-  }
-
-  .signup {
-    border-bottom: 5px double rgb(47, 57, 68);
-    margin-bottom: 50px;
-  }
-
-
-  #latest_news {
-    margin-bottom: 50px;
-  }
-
-  .signup p {
-    text-align: center;
-    margin: -10px;
-    color: #ababab;
-  }
-
-
-  .container {
+  .main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .container {
+    margin: 2rem;
+  }
+
+  input {
+    margin-top: .5rem;
     width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-style: none;
+    border-radius: 5px;
+  }
+
+  .flex-item {
+    margin-top: 1rem;
+  }
+
+  #state {
+    width: 100%;
+    height: 40px;
+    background-color: #eee;
+    border-style: none;
+    border-radius: 5px;
+  }
+
+  #zip {
+    max-width: 33%;
+  }
+
+  .form-bottom {
+    margin-top: 2rem;
+  }
+
+  legend {
+    color: rgb(47, 57, 68);
+    padding-top: 20px;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .top-txt p {
+    font-size: 1rem;
+    color: #a3a3a3;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .top-txt h2 {
+    text-align: center;
+  }
+
+
+  button {
+    width: 100%;
+    margin: 70px 0;
+    padding: 15px 10px;
+    background: rgb(107, 185, 180);
+    color: white;
+    border-radius: 5px;
   }
 
   fieldset {
     border-style: none;
-  }
-
-  .contact-info input,
-  #state {
-    background-color: #eee;
-    border-radius: 5px;
-    float: right;
-  }
-
-  legend {
-    font-size: 1.1rem;
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: rgb(47, 57, 68);
-  }
-
-
-  .contact-info label {
-    display: inline-block;
-    margin: 22px 0;
-    margin-right: 20px;
-  }
-
-  input,
-  #state {
-    width: 250px;
-    margin: 5px 0 ;
-    padding: .5rem;
-  }
-
-  #state {
-    height: 2.2rem;
-  }
-
-  .newsletter-info label {
-    margin-left: -215px;
-  }
-
-  button {
-    width: 100%;
-    margin-top: 30px;
-    padding: 20px 25px;
-    color: white;
-    background-color: rgb(107, 185, 180);
-    border-radius: 5px;
+    padding: 0;
   }
 
   textarea {
     width: 100%;
-    height: 100px;
+    margin-top: 1rem;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: #e6e6e6;
   }
 
+  input:focus,
+  textarea:focus {
+    background: #bbb;
+  }
 
-  .click:focus {
-    background-color: #cfcfcf;
+  .form-top p {
+    font-size: 1rem;
+  }
+
+  .split-1 {
+    border-top: 3px double rgb(47, 57, 68);
+  }
+
+  .split-2 {
+    border-top: 3px solid rgb(47, 57, 68);
+    margin-top: 50px;
+  }
+
+  .split-2 label {
+    display: block;
+    padding-left: 20px;
+    margin-top: -30px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-left: -5px;
+  }
+
+  .main-content p {
+    color: #a3a3a3;
+  }
+
+  .textbox {
+    margin-top: 40px;
+  }
+
+  input::placeholder {
+    text-align: right;
+    padding-right: 20px;
+    color: rgb(162, 162, 162);
+  }
+
+  /* MEDIA QUERY */
+
+  @media (min-width: 768px) {
+
+    .container {
+      width: 75%;
+    }
+
+    button {
+      padding: 20px;
+    }
+
+
+    .flex-item {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+    .flex-item label {
+      min-width: 33%;
+    }
+
+
   }
