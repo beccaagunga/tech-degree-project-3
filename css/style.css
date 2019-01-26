@@ -111,11 +111,22 @@
   textarea:focus {
     background: #bbb;
     outline-color: rgb(107, 185, 180);
+    transition: outline-color .3s
   }
 
   select:focus {
     outline-color: rgb(107, 185, 180);
+    transition: outline-color .6s
   }
+
+ button:hover {
+   background-color: rgb(56, 152, 146);
+
+
+ }
+
+
+
 
   .form-top p {
     font-size: 1rem;
